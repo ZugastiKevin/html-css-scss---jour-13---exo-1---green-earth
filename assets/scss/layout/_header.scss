@@ -1,0 +1,26 @@
+@keyframes button-animation-rev {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+
+.headers {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    .logo-img-container {
+        width: 10%;
+        img {
+            border-radius: none;
+        }
+    }
+    nav {
+        a:hover, a:hover span{
+            animation: button-animation-rev 0.65s ease-out forwards;
+        }
+    }
+}

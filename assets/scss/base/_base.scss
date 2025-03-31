@@ -22,3 +22,9 @@ img {
     object-position: center;
     border-radius: variable.$radious;
 }
+
+a {
+    text-decoration: none;
+    border-radius: variable.$radious;
+    cursor: pointer;
+}

@@ -1,9 +1,16 @@
 // Pages
 @use "pages/home";
 
+// Layout
+@use "layout/header";
+
+// Components
+@use "components/button";
+
 // Abstracts
 @use "abstracts/variables";
 
 // Base
 @use "base/base";
+@use "base/utilities";
 @use "base/typographys";

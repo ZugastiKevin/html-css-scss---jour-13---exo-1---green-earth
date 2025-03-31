@@ -15,6 +15,9 @@ $bg-green: #054d3b;
 $bg-orange: #ed732c;
 $bg-acid-green: #799e29;
 
-$bg-gradient: linear-gradient(90deg, rgba(5,77,59,1) 0%, rgba(121,158,41,1) 100%);
+$bg-gradient: linear-gradient(95deg, rgba(5,77,59,1) 0%, rgba(121,158,41,1) 50%, #faf2e7 50%);
+$bg-gradient-seconde: linear-gradient(95deg, rgba(5,77,59,1) 0%, rgba(121,158,41,1) 100%,);
 
-$radious: 1rem;
+$padding: 0.9rem 1.5rem;
+$radious: 0.5rem;
+$span: 1rem;

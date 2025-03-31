@@ -1,0 +1,10 @@
+@use "./variables" as variable;
+
+@mixin button($btn-padding: variable.$padding, $btn-radious: variable.$radious, $btn-border: 1px solid variable.$green, $btn-color: variable.$white, $btn-bg-color: variable.$bg-green,) {
+    padding: $btn-padding;
+    border-radius: $btn-radious;
+    border: $btn-border;
+    color: $btn-color;
+    background-color: $btn-bg-color;
+    transition: all 0.2s ease-in-out;
+}

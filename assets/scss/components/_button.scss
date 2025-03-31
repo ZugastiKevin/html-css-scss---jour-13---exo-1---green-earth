@@ -1,5 +1,59 @@
 @use "../abstracts/variables" as variable;
+@use "../abstracts/mixins" as mixin;
 
-.btn {
-    
+@keyframes button-animation {
+    0% {
+      background-position: top right;
+    }
+    100% {
+      background-position: top left;
+    }
+  }
+
+.btn-gradient {
+    background-image: variable.$bg-gradient;
+
+    background-size: 270%;
+    background-repeat: repeat;
+    background-position: top right;
+
+    animation: button-animation 0.65s 0.15s ease-out forwards;
+
+    box-shadow: 7px 4px 20px 1px rgba(0,0,0,0.15);
+    padding: variable.$padding;
+    .text-gradient {
+        background-color: variable.$bg-white;
+        background-image: variable.$bg-cream;
+
+        background-size: 270%;
+        background-repeat: repeat;
+        background-position: top right;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+
+        animation: button-animation 0.65s 0.15s ease-out forwards;
+    }
+}
+
+.btn-gradient:hover {
+    box-shadow: 3px 2px 10px 1px rgba(0,0,0,0.15);
+    transition: 0.5s;
+    .text-gradient {
+        background-color: variable.$white;
+        background-image: variable.$bg-gradient-seconde;
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+.btn-primary {
+    @include mixin.button()
+}
+
+.btn-primary:hover {
+    color: variable.$green;
+    background-color: variable.$bg-cream;
 }
