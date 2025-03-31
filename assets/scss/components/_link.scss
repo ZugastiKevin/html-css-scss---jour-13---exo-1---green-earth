@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as variable;
+
+.link {
+    color: variable.$orange;
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+    color: variable.$green;
+}

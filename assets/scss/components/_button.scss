@@ -57,3 +57,23 @@
     color: variable.$green;
     background-color: variable.$bg-cream;
 }
+
+.btn-secondary {
+    @include mixin.button()
+}
+
+.btn-secondary:hover {
+    color: variable.$green;
+    background-color: variable.$white;
+}
+
+.btn-third {
+    @include mixin.button($btn-radious: 1.5rem, $btn-border: 1px solid variable.$grey, $btn-color: variable.$black, $btn-bg-color: variable.$white,);
+    text-transform: uppercase;
+}
+
+.btn-third:hover {
+    background-color: variable.$bg-green;
+    color: variable.$white;
+    border-color: variable.$bg-green;
+}

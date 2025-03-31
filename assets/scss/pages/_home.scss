@@ -1,0 +1,127 @@
+@use "../abstracts/variables" as variable;
+
+#hero {
+    .hero {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        .body-hero {
+            width: 48%;
+            h3 {
+                margin-top: 0;
+                text-transform: capitalize;
+            }
+        }
+        .hero-img {
+            width: 50%;
+            .img-hero {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+                -webkit-box-shadow: 10px 10px 0px 0px variable.$bg-green; 
+                box-shadow: 10px 10px 0px 0px variable.$bg-green;
+            }
+        }
+    }
+}
+
+#projects {
+    .projects {
+        h2 {
+            text-transform: capitalize;
+        }
+        .projects-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+            .project-card {
+                width: 32%;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+                border-radius: variable.$radious;
+                background-color: variable.$bg-white;
+                .project-card-title {
+                    border-bottom: 1px solid variable.$grey;
+                }
+            }
+        }
+    }
+}
+
+#mission {
+    background-image: url(../img/farmer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0rem;
+    .mission {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        gap: 2rem;
+        background-color: variable.$bg-white;
+        border-radius: variable.$radious;
+        padding: 4rem;
+
+        .mission-body {
+            width: 50%;
+            h2 {
+                margin-top: 0;
+            }
+
+            .mission-list {
+                display: flex;
+            }
+
+            ul {
+                width: 50%;
+                li::before {
+                    width: 3%;
+                    display: inline-block;
+                    content: url(../svg/circle-regular.svg);
+                    filter: invert(22%) sepia(50%) saturate(679%) hue-rotate(115deg) brightness(94%) contrast(98%);;
+                }
+            }
+        }
+        .mission-img {
+            width: 35%;
+        }
+    }
+}
+
+#news {
+    .news {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        .big-news {
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            .big-news-img {
+                width: 49%;
+                max-height: 40vh;
+            }
+            .big-news-body {
+                width: 49%;
+                padding: 1rem;
+                background-color: variable.$white;
+                border-radius: variable.$radious;
+            }
+        }
+        .cards-news {
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            .card-news {
+                width: 30%;
+                .news-img {
+                    width: 100%;
+                    height: 12vh;
+                }
+            }
+        }
+    }
+}
+
